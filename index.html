@@ -1,59 +1,153 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trendiva - أزياءك الكاجوال بإحساسك</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trendiva - أزياء كاجوال للبنات</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: white;
+      color: #e91e63;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 28px;
+      color: #e91e63;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features ul li {
+      background: #ffe4ec;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .contact button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: #f8f8f8;
+      padding: 15px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- البانر -->
-  <header class="hero">
-    <div class="container">
-      <img src="https://i.imgur.com/3wZ1b3R.jpg" alt="Trendiva Banner" class="banner-img">
-      <h1>مرحبًا بكِ في Trendiva</h1>
-      <p>لأنكِ تستحقين إطلالة كاجوال بروحك الأنيقة 💫</p>
-      <a href="#shop" class="cta">تسوقي الآن</a>
-    </div>
-  </header>
+<header>
+  <h1>مرحبًا بكِ في Trendiva</h1>
+  <p>اكتشفي أحدث صيحات الموضة الكاجوال للفتيات العصريات</p>
+  <button class="btn">تسوقي الآن</button>
+</header>
 
-  <!-- قسم المنتجات -->
-  <section id="shop" class="shop">
-    <div class="container">
-      <h2>تسوقي تشكيلتنا</h2>
-      <p>قريبًا سيتم عرض المنتجات هنا...</p>
-    </div>
-  </section>
+<section class="about">
+  <h2>من نحن</h2>
+  <p>Trendiva هي علامة تجارية للأزياء الكاجوال تهدف لتقديم ملابس مريحة، عصرية، وملهمة لكل فتاة تحب الأناقة والبساطة في آن واحد.</p>
+</section>
 
-  <!-- قسم عنّا -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>من نحن</h2>
-      <p>Trendiva هي علامة تجارية نسائية متخصصة في الأزياء الكاجوال العصرية التي تعكس أناقتك الطبيعية بأسلوب بسيط ومميز. نهتم بأدق التفاصيل لتقديم تجربة تسوق رائعة وجودة لا تُضاهى.</p>
-    </div>
-  </section>
+<section class="features">
+  <h2>ماذا يميز Trendiva؟</h2>
+  <ul>
+    <li>🌸 تصاميم عصرية تواكب أحدث صيحات الموضة</li>
+    <li>🧵 خامات عالية الجودة وراحة في اللبس</li>
+    <li>💸 أسعار مناسبة وتنافسية</li>
+    <li>🚚 شحن سريع لجميع المحافظات</li>
+    <li>🎁 عروض وهدايا موسمية للعملاء المميزين</li>
+  </ul>
+</section>
 
-  <!-- قسم تواصل معنا -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>تواصلي معنا</h2>
-      <form>
-        <input type="text" name="name" placeholder="الاسم" required>
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-        <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
-        <button type="submit">إرسال</button>
-      </form>
-    </div>
-  </section>
+<section class="gallery">
+  <h2>صور من تشكيلتنا</h2>
+  <img src="https://i.imgur.com/ZJ5xXWd.jpg" alt="كاجوال بناتي">
+  <img src="https://i.imgur.com/LH9V6c1.jpg" alt="تيشيرت موضة">
+  <img src="https://i.imgur.com/RZrX6Co.jpg" alt="إطلالة كاجوال أنيقة">
+  <img src="https://i.imgur.com/vR1BLy7.jpg" alt="ملابس صيفية">
+</section>
 
-  <!-- الفوتر -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Trendiva. جميع الحقوق محفوظة.</p>
-    </div>
-  </footer>
+<section class="contact">
+  <h2>تواصلي معنا</h2>
+  <form>
+    <input type="text" placeholder="الاسم" required>
+    <input type="email" placeholder="البريد الإلكتروني" required>
+    <textarea rows="4" placeholder="اكتبي رسالتك هنا..." required></textarea>
+    <button type="submit">إرسال</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 جميع الحقوق محفوظة لـ Trendiva
+</footer>
 
 </body>
 </html>
